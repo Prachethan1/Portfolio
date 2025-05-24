@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Prachethan</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Prachethan</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="assets\PassportPhoto.jpg" alt="John Doe profile picture" style="border-radius: 50%; width: 350px;
+  height: 350px;"/>
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Prachethan Mayawar</h1>
+        <p class="section__text__p2">Software Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Prachethan Resume.pdf')"
+          >
+            Download CV
+          </button>
+          <!-- <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button> -->
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/mayawarprachethan/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Prachethan1'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <!-- <div class="section__pic-container">
+          <img
+            src=""
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div> -->
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>1 year <br />Software Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.E(I.T) Bachelors Degree<br /> 2021-2025</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I'm an aspiring software developer currently pursuing a B.E. in Information 
+              Technology with a CGPA of 8.52 from Matrusri Engineering College.
+              I have gained hands-on development experience through roles at Vistex (as a Junior Software Developer), IISPPR, and 
+              The Entrepreneurship Network, where I worked with SAP ABAP, built robust backends, and developed reusable ReactJS 
+              components to enhance UI and performance. During these roles, I collaborated across teams, optimized backend 
+              processes, and improved frontend-backend integration to boost overall system efficiency. 
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      /> -->
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Junior Software Developer</h2>
+            <div style="display: flex; justify-content: center; margin-top: -10px;">
+              <img src="assets\Vistex_logo.png" alt="" srcset="" style="height: 30px;">
+              <h3 style="font-size: 25px;"> Vistex </h3>
+              </div>
+              <div>
+              <h5>Mar 2025– Present &nbsp;&nbsp;|&nbsp;&nbsp;  Hyderabad</h5>
+              <p> Gaining hands-on experience in SAP ABAP and familiar 
+                with data dictionary objects, classical and interactive
+                reports, internal tables, and modularization techniques.
+                Learning debugging techniques and performance optimization for ABAP code</p>
+            </div>
+            
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Full Stack Developer</h2>
+            <div style="display: flex; justify-content: center; margin-top: -10px;">
+              <img src="assets\iisppr_logo.jpg" alt="" srcset="" style="height: 30px;">
+              <h3 style="font-size: 25px;"> IISPPR </h3>
+              </div>
+              <div>
+              <h5>Dec 2024– Feb 2025 &nbsp;&nbsp;|&nbsp;&nbsp;  Remote</h5>
+              <p>  Developed an intern hiring system for IISPPR to streamline 
+                internship applications, task assignments, and performance tracking.
+              Includes user authentication, admin and intern roles, task assignment and submission
+               tracking, and performance monitoring—all optimized for a responsive user experience.</p>
+            </div>
+            
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">MERN Stack Developer</h2>
+            <div style="display: flex; justify-content: center; margin-top: -10px;">
+              <img src="assets\THE_logo.jpg" alt="" srcset="" style="height: 30px;">
+              <h3 style="font-size: 25px;"> The Entrepreneurship Network </h3>
+              </div>
+              <div>
+              <h5>Jun 2024– Nov 2024 &nbsp;&nbsp;|&nbsp;&nbsp;  Remote</h5>
+              <p>   Designed and implemented reusable React components for consistent UI/UX across the Top Mentor website,
+ focusing on modularity and efficiency.
+ Developed RESTful APIs and integrated them with the frontend to enable smooth user interactions, ensuring
+ optimal performance and security.</p>
+            </div>
+            </div>
+        </div>
+      </div>
+      <!-- <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      /> -->
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="assets\ebook.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">EBook Website</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Prachethan1/EBook-Website'"
+              >
+                Github
+              </button>
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button> -->
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="assets/quiz.webp"
+                alt="Project 2"
+                class="project-img"
+                style="height: 200px;"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Quiz Application</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Prachethan1/QuizServer'"
+              >
+                Github
+              </button>
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button> -->
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="assets/stock.jpg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Stock Market Analysis</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Prachethan1/StockPrediction'"
+              >
+                Github
+              </button>
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      /> -->
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:mayawarprachethan123@gmail.com">Gmail</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/mayawarprachethan/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Prachethan. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
